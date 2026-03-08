@@ -1,0 +1,185 @@
+return model =
+  name: 'Inertia'
+  level: 7
+  model: 9
+  size: 2.7
+  zoom: 1.04
+  specs:
+    shield:
+      capacity: [550,550]
+      reload: [12,12]
+    generator:
+      capacity: [220,220]
+      reload: [80,80]
+    ship:
+      mass: 500
+      speed: [85,85]
+      rotation: [45,45]
+      acceleration: [68,68]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 10
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-125,-120,-110,-85,-70,-60,-20,0,40,70,90,100,95]
+        z: [0,0,0,0,0,0,0,0,0,0,0,0,0]
+      width: [0,10,15,25,30,37,36,35,33,32,28,20,0]
+      height: [0,15,25,27,28,27,26,25,23,22,18,15,0]
+      texture: [4,31,11,1,31,3,2,4,11,3,31,17]
+      propeller: true
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -50
+        z: 25
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-35,-25,-7,15,50,70,100]
+        z: [0,0,0,0,0,-1,-1.8]
+      width: [0,8,13,15,18,16,5]
+      height: [0,10,15,15,12,11,5]
+      texture: [9,9,9,11,63,4,4]
+    topengines:
+      section_segments: 8
+      offset:
+        x: 25
+        y: 60
+        z: 18
+      position:
+        x: [-5,-5,-4,-2,-2,-2,-2,-2]
+        y: [-60,-55,-40,-6,15,45,58,53]
+        z: [-10,-10,-8,-2,-1,0,0,0]
+      width: [0,7,9.5,12,12,11,9,0]
+      height: [0,7,9.5,10,10,11,9,0]
+      texture: [31,4,2,8,63,4,17]
+      propeller: true
+    cannons:
+      section_segments: 12
+      offset:
+        x: 36.1
+        y: -50
+        z: 0
+      position:
+        x: [0,0.95,1,2,3,5,2,1,0,0]
+        y: [-30,-40,-38,-20,0,20,30,40,42]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,5,5,6,10,10,8,4,0]
+      height: [0,5,5,6,10,10,8,5,0]
+      texture: [17,31,12,31,8,3,3,31]
+      propeller: false
+      angle: 0
+      laser:
+        damage: [30,30]
+        rate: 6
+        type: 1
+        speed: [165,165]
+        recoil: 63
+        number: 1
+        error: 0
+        angle: 0
+    sidetopengines:
+      section_segments: 8
+      offset:
+        x: 50
+        y: 70
+        z: 28
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-65,-55,-60,-45,-15,10,45,58,53]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,7,10,15,14,15,12,9,0]
+      height: [0,7,10,15,12,14,12,9,0]
+      texture: [4,17,63,3,4,10,3,17]
+      propeller: true
+      angle: 0
+    sidebottomengines:
+      section_segments: 8
+      offset:
+        x: 65
+        y: 60
+        z: -28
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-65,-55,-60,-40,5,25,45,58,53]
+        z: [0,0,0,0,0,0,0,0,0,0,0,0]
+      width: [0,7,10,15,13,14,12,9,0]
+      height: [0,7,10,15,13,14,12,9,0]
+      texture: [4,17,4,11,31,2,4,17]
+      propeller: true
+      angle: 0
+    sides:
+      section_segments: 8
+      offset:
+        x: 10
+        y: -20
+        z: 0
+      position:
+        x: [-10,-2,0,5,7,0]
+        y: [-95,-90,-80,-40,-30,10]
+        z: [0,0,0,0,0,0]
+      width: [0,10,15,20,20,0]
+      height: [0,15,22,26,21,0]
+      propeller: false
+      texture: [4,31,10,31,31,2,12]
+  wings:
+    cannonjointop:
+      doubleside: true
+      offset:
+        x: 6
+        y: -50
+        z: 15
+      length: [32,25]
+      width: [50,60,20]
+      angle: [-25,-20]
+      position: [20,0,15]
+      texture: [18,63]
+      bump:
+        position: 10
+        size: 5
+    cannonjoinbottom:
+      doubleside: true
+      offset:
+        x: 6
+        y: -50
+        z: -15
+      length: [32,25]
+      width: [50,60,20]
+      angle: [25,20]
+      position: [20,0,15]
+      texture: [18,63]
+      bump:
+        position: 10
+        size: 5
+    enginejointop:
+      doubleside: true
+      offset:
+        x: 15
+        y: 55
+        z: 5
+      length: [50]
+      width: [50,60]
+      angle: [38]
+      position: [20,0]
+      texture: [63]
+      bump:
+        position: 10
+        size: 10
+    enginejoinbottom:
+      doubleside: true
+      offset:
+        x: 15
+        y: 55
+        z: 0
+      length: [62]
+      width: [50,60]
+      angle: [-30]
+      position: [20,0]
+      texture: [63]
+      bump:
+        position: 10
+        size: 10

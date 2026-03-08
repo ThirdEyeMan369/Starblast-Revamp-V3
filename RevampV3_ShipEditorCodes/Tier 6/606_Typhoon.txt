@@ -1,0 +1,186 @@
+return model =
+  name: 'Typhoon'
+  level: 6
+  model: 6
+  next: [705,706]
+  size: 1.85
+  specs:
+    shield:
+      capacity: [230,350]
+      reload: [4,7]
+    generator:
+      capacity: [170,260]
+      reload: [46,64]
+    ship:
+      mass: 375
+      speed: [67,85]
+      rotation: [40,70]
+      acceleration: [85,95]
+  bodies:
+    body:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -12.5
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0]
+        y: [-110,-105,-90,-40,-20,0,20,78,120,137,130]
+        z: [0,0,0,0,0,0,0,0,0,0,0]
+      width: [0,10,16,25,25,32,35,35,25,20,0]
+      height: [0,17,26,35,35,35,35,35,24,20,0]
+      texture: [4,63,10,63,63,3,10,63,3,17]
+      propeller: true
+    sidethrusters:
+      section_segments: 8
+      offset:
+        x: 30
+        y: 27.5
+        z: 0
+      position:
+        x: [-10,-5,4,-3,-3]
+        y: [-70,-50,0,90,80]
+        z: [0,0,0,0,0,0]
+      width: [0,15,16,10,0]
+      height: [0,15,16,10,0]
+      texture: [4,11,1,17]
+      propeller: true
+    cannons1:
+      section_segments: 8
+      offset:
+        x: 83
+        y: 22.5
+        z: -25
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0]
+        y: [-37,-29,0,45,60,61]
+        z: [0,0,0,0,0,0,0,0,0,0]
+      width: [0,5,10,10,8,0]
+      height: [0,5,10,10,8,0]
+      texture: [6,4,63,4,3]
+      propeller: false
+      angle: -1.5
+      laser:
+        damage: [8,12]
+        rate: 4
+        type: 1
+        speed: [110,170]
+        number: 1
+    cannons2:
+      section_segments: 8
+      offset:
+        x: 45
+        y: 46.5
+        z: 25
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0]
+        y: [-37,-29,0,45,60,61]
+        z: [0,0,0,0,0,0,0,0,0,0]
+      width: [0,5,10,10,8,0]
+      height: [0,5,10,10,8,0]
+      texture: [6,4,3,4,3]
+      propeller: false
+      angle: -0.5
+      laser:
+        damage: [8,12]
+        rate: 4
+        type: 1
+        speed: [130,190]
+        number: 1
+    cannons3:
+      section_segments: 8
+      offset:
+        x: 20
+        y: -62.5
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0]
+        y: [-37,-29,0,45,60,61]
+        z: [0,0,0,0,0,0,0,0,0,0]
+      width: [0,5,10,10,8,0]
+      height: [0,5,10,10,8,0]
+      texture: [6,4,3,4,3]
+      propeller: false
+      laser:
+        damage: [8,12]
+        rate: 4
+        type: 1
+        speed: [150,210]
+        number: 1
+    cannons4:
+      section_segments: 8
+      offset:
+        x: 60
+        y: -12.5
+        z: -38
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0]
+        y: [-37,-29,0,45,60,61]
+        z: [0,0,0,0,0,0,0,0,0,0]
+      width: [0,5,10,10,8,0]
+      height: [0,5,10,10,8,0]
+      texture: [6,4,3,4,3]
+      propeller: false
+      angle: -1
+      laser:
+        damage: [8,12]
+        rate: 4
+        type: 1
+        speed: [130,190]
+        number: 1
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -46.5
+        z: 26
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-50,-30,0,40,70,100]
+        z: [0,0,0,0,0,0]
+      width: [0,10,14,14,13,0]
+      height: [0,10,16,14,10,0]
+      texture: [4,9,9,63,4]
+  wings:
+    wingsmain:
+      offset:
+        x: 30
+        y: 37.5
+        z: 6
+      length: [60,10,0,25]
+      width: [100,80,60,100,55]
+      angle: [-30,-30,-30,-30]
+      position: [-20,0,16,10,40]
+      texture: [3,13,17,63]
+      doubleside: true
+      bump:
+        position: -20
+        size: 4
+    wingsmain2:
+      offset:
+        x: 20
+        y: 57.5
+        z: 20
+      length: [30,10,0,15]
+      width: [70,60,50,90,35]
+      angle: [10,10,10,10]
+      position: [-20,0,16,10,40]
+      texture: [2,13,17,63]
+      doubleside: true
+      bump:
+        position: -20
+        size: 5
+    wingsmain3:
+      offset:
+        x: 10
+        y: -12.5
+        z: -10
+      length: [50]
+      width: [70,50]
+      angle: [-30,0]
+      position: [-20,5]
+      texture: [2]
+      doubleside: true
+      bump:
+        position: -20
+        size: 5
